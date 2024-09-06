@@ -20,13 +20,16 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="75dp"
-        android:layout_height="65dp"
+        android:layout_width="77dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="75dp"
         android:layout_marginBottom="43dp"
         android:background="@drawable/inv"
         android:onClick="btnClick1"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.859"
+        app:layout_constraintStart_toEndOf="@+id/buttonPic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageCenter" />
 
@@ -57,5 +60,18 @@
         app:layout_constraintBottom_toTopOf="@+id/imageCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonPic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="111dp"
+        android:onClick="btnChangePic"
+        android:text="показать"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageCenter" />
 
 </android.support.constraint.ConstraintLayout>

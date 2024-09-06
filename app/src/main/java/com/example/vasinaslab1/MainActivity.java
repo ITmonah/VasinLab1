@@ -4,12 +4,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     private TextView textView, textGroup;
-
+    private ImageView imageCenter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
         textView = findViewById(R.id.textView);
         textGroup = findViewById(R.id.textGroup);
+        imageCenter = findViewById(R.id.imageCenter);
     }
 
     public void btnClick1(View view) {
@@ -26,6 +28,14 @@ public class MainActivity extends AppCompatActivity {
         } else {
             textView.setVisibility(View.VISIBLE);
             textGroup.setVisibility(View.VISIBLE);
+        }
+    }
+
+    public void btnChangePic(View view) {
+        if (imageCenter.getVisibility() == View.VISIBLE) {
+            imageCenter.setVisibility(View.INVISIBLE);
+        } else {
+            imageCenter.setVisibility(View.VISIBLE);
         }
     }
 }
