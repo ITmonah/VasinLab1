@@ -10,28 +10,26 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="18dp"
-        android:layout_marginBottom="26dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
         android:text="Васин Александр"
         android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonPic" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="77dp"
-        android:layout_height="57dp"
-        android:layout_marginEnd="75dp"
-        android:layout_marginBottom="43dp"
+        android:id="@+id/buttonPic"
+        android:layout_width="64dp"
+        android:layout_height="63dp"
         android:background="@drawable/inv"
-        android:onClick="btnClick1"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        android:onClick="btnChangePic"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.859"
-        app:layout_constraintStart_toEndOf="@+id/buttonPic"
+        app:layout_constraintHorizontal_bias="0.714"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageCenter" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.878" />
 
     <ImageView
         android:id="@+id/imageCenter"
@@ -39,9 +37,9 @@
         android:layout_height="0dp"
         android:layout_marginStart="38dp"
         android:layout_marginEnd="38dp"
-        android:layout_marginBottom="18dp"
+        android:layout_marginBottom="135dp"
         android:scaleType="fitCenter"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textGroup"
@@ -52,7 +50,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="15dp"
+        android:layout_marginEnd="13dp"
         android:layout_marginBottom="142dp"
         android:text="Т-413901-ИСиТ"
         android:textColor="#EC1111"
@@ -63,14 +61,15 @@
 
     <Button
         android:id="@+id/buttonPic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="54dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="111dp"
-        android:onClick="btnChangePic"
+        android:layout_width="118dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="27dp"
+        android:onClick="btnClick1"
         android:text="показать"
-        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.252"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageCenter" />
 
